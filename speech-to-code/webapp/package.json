@@ -1,0 +1,56 @@
+{
+	"name": "speech2code.webapp",
+	"description": "The webapp react implementation of the speech2code frontend",
+	"version": "0.0.2-beta.1",
+	"private": true,
+	"dependencies": {
+		"codemirror": "^5.62.0",
+		"microsoft-cognitiveservices-speech-sdk": "^1.16.0",
+		"node-sass": "^5.0.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-draggable": "^4.4.3",
+		"react-scripts": "4.0.3",
+		"react-tooltip": "^4.2.21",
+		"spoken": "file:../spoken/dist",
+		"typescript": "^4.2.3"
+	},
+	"scripts": {
+		"start": "SET PORT=5000 && react-scripts start",
+		"build": "npm run build-spoken && react-scripts build",
+		"build-only": "react-scripts build --silent",
+		"test": "react-scripts test --watchAll=false",
+		"eject": "react-scripts eject",
+		"prestart": "npm run build-spoken",
+		"build-spoken": "cd ../spoken && npm run build && cp dist/grammar.json ../webapp/public"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"proxy": "http://localhost:3000",
+	"devDependencies": {
+		"@types/codemirror": "^5.60.1",
+		"@testing-library/jest-dom": "^5.11.9",
+		"@testing-library/react": "^11.2.5",
+		"@testing-library/user-event": "^12.8.3",
+		"@types/jest": "^26.0.21",
+		"@types/node": "^12.20.6",
+		"@types/react": "^17.0.3",
+		"@types/react-dom": "^17.0.2"
+	}
+}
