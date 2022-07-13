@@ -1,0 +1,1 @@
+{"version":3,"file":"my-vscode.js","sourceRoot":"","sources":["../../src/__tests__/my-vscode.ts"],"names":[],"mappings":";;;AAAa,QAAA,MAAM,GAAG;IAClB,mBAAmB;QACf,OAAO;YACH,UAAU,EAAE,CAAC,IAAY,EAAQ,EAAE;gBAC/B,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,CAAA;YACrB,CAAC;SACJ,CAAA;IACL,CAAC;IACD,sBAAsB,KAAI,CAAC;CAC9B,CAAA;AAEY,QAAA,QAAQ,GAAG;IACpB,eAAe,KAAI,CAAC;CACvB,CAAA"}

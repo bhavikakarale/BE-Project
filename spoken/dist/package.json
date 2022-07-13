@@ -1,0 +1,13 @@
+{
+    "name": "speech2code.spoken",
+    "version": "0.0.1-beta.1",
+    "description": "Transforming natural language in code",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [
+        "Speech-to-code"
+    ],
+    "dependencies": {},
+    "author": "Bhavika Karale",
+    "devDependencies": {}
+}
